@@ -1,0 +1,49 @@
+# Python / Django
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/.env
+backend/venv/
+backend/env/
+backend/.venv/
+backend/env3_12/
+backend/staticfiles/
+backend/media/
+backend/db.sqlite3
+backend/*.log
+
+# Static images (store these locally or on Cloudinary — do not push to Git)
+frontend/public/images/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
+
+# Misc
+*.log
+.env
+dist/
+build/
+coverage/

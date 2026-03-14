@@ -1,0 +1,1 @@
+web: gunicorn ceylon_trailer.wsgi:application --log-file -

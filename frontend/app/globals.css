@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #06b6d4;
+    --secondary: #f59e0b;
+    --ceylon-green: #006E51;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-gray-800 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 inline-flex items-center gap-2 shadow-md hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 inline-flex items-center gap-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold px-6 py-3 rounded-full transition-all duration-300 inline-flex items-center gap-2;
+  }
+
+  .btn-whatsapp {
+    @apply bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 inline-flex items-center gap-2 shadow-md;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading;
+  }
+
+  .section-subtitle {
+    @apply text-gray-500 text-lg mb-12 max-w-2xl mx-auto text-center;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .badge-province {
+    @apply inline-flex items-center gap-1 bg-cyan-500 text-white text-xs font-semibold px-3 py-1 rounded-full;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Swiper customizations */
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-white bg-cyan-500 w-10 h-10 rounded-full;
+  --swiper-navigation-size: 18px;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-cyan-500;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-cyan-500 rounded-full;
+}
