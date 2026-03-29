@@ -8,12 +8,12 @@ import { useInView } from 'react-intersection-observer'
 const categories = [
   {
     label: 'Archaeological Places',
-    image: 'https://images.unsplash.com/photo-1593693411515-c20261bcad6e?w=400&q=80',
+    image: '/images/category-images/archeological-place.webp',
     href: '/destinations?activity=archaeological',
   },
   {
-    label: 'Waterfalls',
-    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&q=80',
+    label: 'Waterfalls Tracking',
+    image: '/images/category-images/waterfall-tracking-srilanka.webp',
     href: '/destinations?activity=waterfalls',
   },
   {
@@ -23,12 +23,12 @@ const categories = [
   },
   {
     label: 'Leisure Time',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80',
+    image: '/images/category-images/lesure-time.png',
     href: '/destinations?activity=leisure',
   },
   {
     label: 'Beach Events',
-    image: 'https://images.unsplash.com/photo-1540202404-a2f29016b523?w=400&q=80',
+    image: '/images/category-images/beach-evwnt.webp',
     href: '/destinations?activity=beach',
   },
 ]

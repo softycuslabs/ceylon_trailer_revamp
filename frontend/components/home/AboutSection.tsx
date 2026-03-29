@@ -47,7 +47,7 @@ export default function AboutSection() {
           >
             <div className="relative h-96 lg:h-[480px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=800&q=80"
+                src="/images/ceylontrailor-travel-bag.webp"
                 alt="Sri Lanka Temple"
                 fill
                 className="object-cover"
@@ -61,7 +61,7 @@ export default function AboutSection() {
             {/* Secondary image */}
             <div className="absolute -bottom-8 -right-8 w-52 h-52 rounded-2xl overflow-hidden border-4 border-white shadow-xl hidden lg:block">
               <Image
-                src="https://images.unsplash.com/photo-1548013146-72479768bada?w=400&q=80"
+                src="/images/ceylon-trails-tea-welcome.webp"
                 alt="Sri Lanka Landscape"
                 fill
                 className="object-cover"

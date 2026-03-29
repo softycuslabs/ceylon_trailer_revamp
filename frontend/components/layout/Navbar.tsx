@@ -30,6 +30,7 @@ const navLinks = [
       { label: 'Eastern Province', href: '/destinations?province=Eastern' },
     ],
   },
+  { label: 'Camping & Glamping', href: '/camping-glamping' },
   { label: 'About', href: '/about' },
   { label: 'Contact Us', href: '/contact' },
 ]
@@ -63,9 +64,9 @@ export default function Navbar() {
           <Image
             src="/images/ceylon-trailor-logo-150x-150.png"
             alt="Ceylon Trails"
-            width={120}
-            height={60}
-            className="object-contain h-14 w-auto"
+            width={150}
+            height={150}
+            className="object-contain h-20 w-auto"
             priority
           />
         </Link>

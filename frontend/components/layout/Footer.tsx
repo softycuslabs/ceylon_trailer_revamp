@@ -44,9 +44,9 @@ export default function Footer() {
                 <Image
                   src="/images/ceylon-trailor-logo-150x-150.png"
                   alt="Ceylon Trails"
-                  width={110}
-                  height={110}
-                  className="object-contain brightness-0 invert"
+                  width={130}
+                  height={130}
+                  className="object-contain"
                 />
               </Link>
               <p className="text-sm text-blue-200 leading-relaxed mb-6">
