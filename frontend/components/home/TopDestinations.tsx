@@ -13,7 +13,7 @@ import { getImageUrl } from '@/lib/utils'
 const FALLBACK_DESTINATIONS = [
   {
     id: 1, name: 'Jaffna', slug: 'jaffna', province: 'Northern', short_description: 'Culture Beyond Borders',
-    image: 'https://images.unsplash.com/photo-1621244368414-82e5c2b93c78?w=600&q=80',
+    image: '/images/locations/jaffna.jpg',
   },
   {
     id: 2, name: 'Ella', slug: 'ella', province: 'Uva', short_description: 'Misty Mountain Escape',

@@ -11,13 +11,13 @@ const HERO_MSG = 'Hello! I would like to plan a trip to Sri Lanka.'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-white via-cyan-50/30 to-blue-50/40 pt-20">
+    <section className="relative min-h-screen flex items-start overflow-hidden bg-gradient-to-br from-white via-cyan-50/30 to-blue-50/40 pt-20">
 
       {/* Decorative background circles */}
       <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-cyan-100/40 rounded-full -translate-y-1/4 translate-x-1/4 blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-100/30 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl pointer-events-none" />
 
-      <div className="container-custom relative z-10 py-12">
+      <div className="container-custom relative z-10 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
           {/* Left — Text content */}
@@ -90,9 +90,9 @@ export default function HeroSection() {
               className="mt-12 flex gap-8 flex-wrap"
             >
               {[
-                { value: '500+', label: 'Tours Completed' },
+                { value: '50+', label: 'Tours Completed' },
                 { value: '50+', label: 'Destinations' },
-                { value: '1000+', label: 'Happy Travelers' },
+                { value: '100+', label: 'Happy Travelers' },
               ].map((stat) => (
                 <div key={stat.label}>
                   <div className="text-2xl font-bold text-cyan-600 font-heading">{stat.value}</div>

@@ -84,10 +84,10 @@ export default function AboutPage() {
           <div className="container-custom">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
               {[
-                { icon: Clock, value: '10+', label: 'Years Experience' },
-                { icon: Users, value: '1000+', label: 'Happy Travelers' },
+                { icon: Clock, value: '2+', label: 'Years Experience' },
+                { icon: Users, value: '100+', label: 'Happy Travelers' },
                 { icon: MapPin, value: '50+', label: 'Destinations' },
-                { icon: Award, value: '500+', label: 'Tours Completed' },
+                { icon: Award, value: '50+', label: 'Tours Completed' },
               ].map((stat) => (
                 <div key={stat.label}>
                   <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">

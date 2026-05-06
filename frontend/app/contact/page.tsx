@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Phone, Mail, MapPin, MessageCircle, Clock } from 'lucide-react'
 import PageHero from '@/components/shared/PageHero'
-import InquiryForm from '@/components/shared/InquiryForm'
+import ContactForm from '@/components/shared/ContactForm'
 import { getWhatsAppUrl } from '@/lib/utils'
 
 export const metadata: Metadata = {
@@ -72,7 +72,7 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
                 <h2 className="text-2xl font-heading font-bold text-gray-900 mb-6">Send Us a Message</h2>
-                <InquiryForm />
+                <ContactForm />
               </div>
             </div>
           </div>

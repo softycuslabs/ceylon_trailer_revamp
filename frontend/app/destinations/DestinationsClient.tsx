@@ -6,7 +6,6 @@ import { Search, SlidersHorizontal, ChevronDown, ChevronUp } from 'lucide-react'
 import PageHero from '@/components/shared/PageHero'
 import DestinationCard from '@/components/destinations/DestinationCard'
 import Pagination from '@/components/shared/Pagination'
-import { getDestinations } from '@/lib/api'
 import type { Destination } from '@/lib/types'
 import { PROVINCES, ACTIVITIES, TRIP_TYPES } from '@/lib/utils'
 
@@ -39,7 +38,13 @@ export default function DestinationsClient() {
   const fetchData = useCallback(async () => {
     setLoading(true)
     try {
-      const data = await getDestinations({ province: province as any, search, page })
+      const params = new URLSearchParams()
+      if (province) params.set('province', province)
+      if (search) params.set('search', search)
+      params.set('page', String(page))
+
+      const res = await fetch(`/api/destinations?${params.toString()}`)
+      const data = await res.json()
       setDestinations(data.results)
       setTotalCount(data.count)
     } catch {

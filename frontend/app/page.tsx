@@ -8,7 +8,8 @@ import PhotoGallery from '@/components/home/PhotoGallery'
 import WhyChooseUs from '@/components/home/WhyChooseUs'
 import TrustedBy from '@/components/home/TrustedBy'
 import Testimonials from '@/components/home/Testimonials'
-import { getFeaturedDestinations, getGalleryImages, getTestimonials } from '@/lib/api'
+import { fetchFeaturedDestinations } from '@/lib/destinations-data'
+import { getGalleryImages, getTestimonials } from '@/lib/api'
 
 export const revalidate = 3600
 
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
 
 export default async function HomePage() {
   const [destinations, galleryData, testimonialsData] = await Promise.allSettled([
-    getFeaturedDestinations(),
+    fetchFeaturedDestinations(),
     getGalleryImages({ is_featured: true }),
     getTestimonials(),
   ])

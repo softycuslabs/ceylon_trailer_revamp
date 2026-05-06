@@ -7,10 +7,10 @@ import { useInView } from 'react-intersection-observer'
 import { ArrowRight, Award, Users, MapPin, Clock } from 'lucide-react'
 
 const stats = [
-  { icon: Award, value: '10+', label: 'Years Experience' },
-  { icon: Users, value: '1000+', label: 'Happy Travelers' },
+  { icon: Award, value: '2+', label: 'Years Experience' },
+  { icon: Users, value: '100+', label: 'Happy Travelers' },
   { icon: MapPin, value: '50+', label: 'Destinations' },
-  { icon: Clock, value: '500+', label: 'Tours Completed' },
+  { icon: Clock, value: '50+', label: 'Tours Completed' },
 ]
 
 export default function AboutSection() {
@@ -54,14 +54,14 @@ export default function AboutSection() {
               />
               {/* Floating card */}
               <div className="absolute bottom-6 left-6 bg-white rounded-xl p-4 shadow-xl">
-                <div className="text-cyan-500 font-bold text-3xl font-heading">10+</div>
+                <div className="text-cyan-500 font-bold text-3xl font-heading">2+</div>
                 <div className="text-gray-600 text-sm font-medium">Years of Excellence</div>
               </div>
             </div>
             {/* Secondary image */}
             <div className="absolute -bottom-8 -right-8 w-52 h-52 rounded-2xl overflow-hidden border-4 border-white shadow-xl hidden lg:block">
               <Image
-                src="/images/ceylon-trails-tea-welcome.webp"
+                src="/images/memories.png"
                 alt="Sri Lanka Landscape"
                 fill
                 className="object-cover"
