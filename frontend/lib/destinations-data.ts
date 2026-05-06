@@ -27,7 +27,7 @@ import {
   getDemoDestinationsPaginated,
 } from '@/demo'
 
-const USE_DEMO = process.env.USE_DEMO_DATA === 'true'
+const USE_DEMO = process.env.NEXT_PUBLIC_USE_DEMO_DATA === 'true'
 
 /** List destinations — with optional province / search / page filters */
 export async function listDestinations(

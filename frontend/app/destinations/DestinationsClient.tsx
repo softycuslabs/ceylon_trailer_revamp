@@ -8,8 +8,10 @@ import DestinationCard from '@/components/destinations/DestinationCard'
 import Pagination from '@/components/shared/Pagination'
 import type { Destination } from '@/lib/types'
 import { PROVINCES, ACTIVITIES, TRIP_TYPES } from '@/lib/utils'
+import { getDemoDestinationsPaginated } from '@/demo'
 
 const PAGE_SIZE = 12
+const USE_DEMO = process.env.NEXT_PUBLIC_USE_DEMO_DATA === 'true'
 
 export default function DestinationsClient() {
   const searchParams = useSearchParams()
@@ -38,15 +40,21 @@ export default function DestinationsClient() {
   const fetchData = useCallback(async () => {
     setLoading(true)
     try {
-      const params = new URLSearchParams()
-      if (province) params.set('province', province)
-      if (search) params.set('search', search)
-      params.set('page', String(page))
-
-      const res = await fetch(`/api/destinations?${params.toString()}`)
-      const data = await res.json()
-      setDestinations(data.results)
-      setTotalCount(data.count)
+      if (USE_DEMO) {
+        const data = getDemoDestinationsPaginated(page, PAGE_SIZE, { province, search })
+        setDestinations(data.results)
+        setTotalCount(data.count)
+      } else {
+        // Live mode: /api/ is proxied by Nginx directly to Django — correct path
+        const params = new URLSearchParams()
+        if (province) params.set('province', province)
+        if (search) params.set('search', search)
+        params.set('page', String(page))
+        const res = await fetch(`/api/destinations/?${params.toString()}`)
+        const data = await res.json()
+        setDestinations(data.results)
+        setTotalCount(data.count)
+      }
     } catch {
       setDestinations([])
     } finally {
