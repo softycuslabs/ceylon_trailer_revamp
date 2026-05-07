@@ -15,7 +15,7 @@ backend/db.sqlite3
 backend/*.log
 
 # Static images (store these locally or on Cloudinary — do not push to Git)
-frontend/public/images/
+#frontend/public/images/
 
 # Node / Next.js
 frontend/node_modules/

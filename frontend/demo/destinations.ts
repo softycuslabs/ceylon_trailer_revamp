@@ -214,7 +214,7 @@ export const DEMO_DESTINATIONS: Destination[] = [
       'An iconic UNESCO 5th-century rock fortress rising 200m — famous for its ancient frescoes, giant Lion Gate, and royal water gardens.',
     description:
       'Sigiriya, also known as Lion Rock, is a majestic UNESCO World Heritage Site and one of Sri Lanka\'s most iconic landmarks. Built in the 5th century CE by King Kashyapa I, this ancient rock fortress sits atop a massive granite monolith rising about 200 meters above the surrounding plains. Stunning paintings of celestial maidens on the sheltered rock face are extraordinary examples of ancient Sri Lankan artistic skill. The famous Lion Gate entrance is flanked by giant stone lion\'s paws — the feature that gives the rock its legendary name. Terraced gardens, moats, and sophisticated water-retaining systems demonstrate advanced 5th-century engineering.',
-    image: '/images/destinations/sigiriya.png',
+    image: '/images/destinations/sigiriya.jpg',
     images: [],
     map_lat: '7.9570',
     map_lng: '80.7603',
