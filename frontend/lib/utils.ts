@@ -31,7 +31,8 @@ export function truncateText(text: string, maxLength: number): string {
 export function getImageUrl(path: string | null | undefined): string {
   if (!path) return '/images/placeholder.jpg'
   if (path.startsWith('http')) return path
-  return `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '')}${path}`
+  if (path.startsWith('/')) return path  // local public/ file
+  return `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '')}/${path}`
 }
 
 export const PROVINCES = [

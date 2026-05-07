@@ -172,7 +172,7 @@ export default async function DestinationDetailPage({ params }: { params: { slug
             <aside className="space-y-6">
 
               {/* Plan Your Trip CTA */}
-              <div className="bg-gradient-to-br from-cyan-500 to-cyan-700 rounded-2xl p-6 text-white sticky top-24">
+              {/* <div className="bg-gradient-to-br from-cyan-500 to-cyan-700 rounded-2xl p-6 text-white sticky top-24">
                 <h3 className="font-heading font-bold text-xl mb-1">Plan Your Trip</h3>
                 <p className="text-cyan-100 text-sm mb-5">
                   Interested in visiting {destination.name}? Our experts are ready to help.
@@ -193,7 +193,7 @@ export default async function DestinationDetailPage({ params }: { params: { slug
                   Browse Trip Packages
                   <ArrowRight className="w-4 h-4" />
                 </Link>
-              </div>
+              </div> */}
 
               {/* Location */}
               {destination.map_lat && destination.map_lng && (

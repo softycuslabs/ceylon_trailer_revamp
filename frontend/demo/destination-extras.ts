@@ -16,7 +16,7 @@ export interface DestinationExtras {
 export const DESTINATION_EXTRAS: Record<string, DestinationExtras> = {
   kandy: {
     images: [
-      { id: 101, image: 'https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=1200&q=80', caption: 'Temple of the Tooth Relic', order: 1 },
+      { id: 101, image: '/images/destinations/kandy.jpg', caption: 'Temple of the Tooth Relic', order: 1 },
       { id: 102, image: 'https://images.unsplash.com/photo-1586095416015-8a94a4a3a77c?w=1200&q=80', caption: 'Kandy Lake at dusk', order: 2 },
       { id: 103, image: 'https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=1200&q=80', caption: 'Royal Botanical Gardens', order: 3 },
       { id: 104, image: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&q=80', caption: 'Esala Perahera festival', order: 4 },
