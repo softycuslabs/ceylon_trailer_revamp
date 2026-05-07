@@ -110,6 +110,33 @@ export default function HeroSection() {
             className="flex justify-center lg:justify-end relative"
           >
             <div className="relative w-full max-w-lg">
+              {/* Decorative shape — top left */}
+              <motion.div
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                className="absolute -top-6 -left-6 w-20 h-20 z-10 opacity-80"
+              >
+                <Image src="/images/shape-2-251x244.webp" alt="" width={80} height={80} className="object-contain" />
+              </motion.div>
+
+              {/* Decorative shape — bottom right */}
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+                className="absolute -bottom-4 -right-4 w-16 h-16 z-10 opacity-70"
+              >
+                <Image src="/images/shape-3-239x244.webp" alt="" width={64} height={64} className="object-contain" />
+              </motion.div>
+
+              {/* Decorative shape — middle right */}
+              <motion.div
+                animate={{ rotate: [0, 10, -10, 0] }}
+                transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
+                className="absolute top-1/2 -right-8 w-14 h-14 z-10 opacity-60"
+              >
+                <Image src="/images/shape-4.webp" alt="" width={56} height={56} className="object-contain" />
+              </motion.div>
+
               <Image
                 src="/images/ceylontrailor-header-right-image.webp"
                 alt="Sri Lanka Travel"

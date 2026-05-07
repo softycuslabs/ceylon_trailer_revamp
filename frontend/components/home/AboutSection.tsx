@@ -53,20 +53,39 @@ export default function AboutSection() {
                 className="object-cover"
               />
               {/* Floating card */}
-              <div className="absolute bottom-6 left-6 bg-white rounded-xl p-4 shadow-xl">
+              {/* <div className="absolute bottom-6 left-6 bg-white rounded-xl p-4 shadow-xl">
                 <div className="text-cyan-500 font-bold text-3xl font-heading">2+</div>
                 <div className="text-gray-600 text-sm font-medium">Years of Excellence</div>
-              </div>
+              </div> */}
             </div>
-            {/* Secondary image */}
-            <div className="absolute -bottom-8 -right-8 w-52 h-52 rounded-2xl overflow-hidden border-4 border-white shadow-xl hidden lg:block">
+            {/* Secondary image — bottom-right */}
+            {/* Don't remove thease comented codes */}
+            {/* <div className="absolute -bottom-8 -right-8 w-52 h-52 rounded-2xl overflow-hidden border-4 border-white shadow-xl hidden lg:block">
               <Image
                 src="/images/memories.png"
                 alt="Sri Lanka Landscape"
                 fill
                 className="object-cover"
               />
-            </div>
+            </div> */}
+
+            {/* Tertiary floating card — tea plantation, top-right */}
+            <motion.div
+              animate={{ y: [0, -9, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 0.8 }}
+              className="absolute -bottom-8 -right-8 w-44 h-36 rounded-2xl overflow-hidden border-4 border-white shadow-xl hidden lg:block z-10"
+            >
+              <Image
+                src="/images/ceylon-trails-tea-welcome.webp"
+                alt="Tea Plantation"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+              <span className="absolute bottom-2 left-3 text-white text-[10px] font-semibold tracking-wide drop-shadow">
+                Healthy Country
+              </span>
+            </motion.div>
           </motion.div>
 
           {/* Text */}
