@@ -1,70 +1,66 @@
 'use client'
 
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import {
-  Hotel, Plane, Map, Car, Shield, Compass, Ticket, Bus, ClipboardList, Users, Leaf, Star
-} from 'lucide-react'
 
 const services = [
   {
-    icon: Hotel,
+    emoji: '🏨',
     title: 'Hotel Reservations',
     description: 'Carefully selected accommodations from budget to luxury, tailored to your preferences.',
   },
   {
-    icon: Plane,
+    emoji: '✈️',
     title: 'Flight Booking',
     description: 'Best-price flights from various airlines, optimized for your schedule and budget.',
   },
   {
-    icon: Map,
+    emoji: '🗺️',
     title: 'Tour Packages',
     description: 'Curated tour experiences covering all the iconic attractions and hidden gems of Sri Lanka.',
   },
   {
-    icon: Car,
+    emoji: '🚗',
     title: 'Car Rentals',
     description: 'Reliable vehicles with experienced drivers for comfortable island exploration.',
   },
   {
-    icon: Shield,
+    emoji: '🛡️',
     title: 'Travel Insurance',
     description: 'Comprehensive insurance coverage to ensure a worry-free travel experience.',
   },
   {
-    icon: Compass,
+    emoji: '🧭',
     title: 'Destination Guides',
     description: 'Expert local guides with deep knowledge of history, culture, and hidden spots.',
   },
   {
-    icon: Ticket,
+    emoji: '🎫',
     title: 'Event & Ticket Bookings',
     description: 'Access to concerts, sports, cultural events and attractions across Sri Lanka.',
   },
   {
-    icon: Bus,
+    emoji: '🚐',
     title: 'Airport Transfers',
     description: 'Smooth, punctual airport-to-hotel transfers ensuring a stress-free arrival.',
   },
   {
-    icon: ClipboardList,
+    emoji: '📋',
     title: 'Custom Itineraries',
     description: 'Personalized travel plans crafted to match your timeline, interests, and budget.',
   },
   {
-    icon: Users,
+    emoji: '👥',
     title: 'Group Travel',
     description: 'Tailored services for groups, families, corporate retreats, and incentive trips.',
   },
   {
-    icon: Leaf,
+    emoji: '🌿',
     title: 'Sustainable Travel',
     description: 'Eco-friendly options for responsible travellers who care about the environment.',
   },
   {
-    icon: Star,
+    emoji: '⭐',
     title: 'VIP Experiences',
     description: 'Exclusive access to premium experiences, private tours, and luxury accommodations.',
   },
@@ -95,11 +91,9 @@ export default function WhyChooseUs() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.05 }}
-              className="bg-white rounded-xl p-6 card-hover shadow-sm border border-gray-100 group"
+              className="bg-white rounded-xl p-6 card-hover shadow-sm border border-gray-100 group text-center"
             >
-              <div className="w-12 h-12 bg-cyan-50 group-hover:bg-cyan-500 rounded-xl flex items-center justify-center mb-4 transition-colors duration-300">
-                <service.icon className="w-6 h-6 text-cyan-500 group-hover:text-white transition-colors duration-300" />
-              </div>
+              <div className="text-4xl mb-4 leading-none">{service.emoji}</div>
               <h3 className="font-semibold text-gray-900 text-base mb-2">{service.title}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">{service.description}</p>
             </motion.div>
