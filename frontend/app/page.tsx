@@ -5,6 +5,7 @@ import TopDestinations from '@/components/home/TopDestinations'
 import EnjoyWithUs from '@/components/home/EnjoyWithUs'
 import SriLankaMap from '@/components/home/SriLankaMap'
 import PhotoGallery from '@/components/home/PhotoGallery'
+import CampingGlampingBanner from '@/components/home/CampingGlampingBanner'
 import WhyChooseUs from '@/components/home/WhyChooseUs'
 import TrustedBy from '@/components/home/TrustedBy'
 import Testimonials from '@/components/home/Testimonials'
@@ -38,6 +39,7 @@ export default async function HomePage() {
       <EnjoyWithUs />
       <SriLankaMap />
       <PhotoGallery images={galleryImages} />
+      <CampingGlampingBanner />
       <WhyChooseUs />
       <Testimonials testimonials={testimonials} />
       <TrustedBy />
