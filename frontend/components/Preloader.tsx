@@ -268,16 +268,7 @@ export default function Preloader() {
         <p className="pl-tag">Discover the Heart of Ceylon</p>
 
         {/* Ocean waves decoration */}
-        <svg className="pl-waves" viewBox="0 0 1440 80" preserveAspectRatio="none">
-          <path
-            d="M0,40 C240,80 480,0 720,40 C960,80 1200,10 1440,40 L1440,80 L0,80 Z"
-            fill="rgba(255,255,255,1)"
-          />
-          <path
-            d="M0,55 C300,20 600,70 900,50 C1100,38 1260,60 1440,55 L1440,80 L0,80 Z"
-            fill="rgba(6,182,212,1)"
-          />
-        </svg>
+        
 
         {/* Progress bar */}
         <div className="pl-bar-track">
