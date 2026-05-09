@@ -84,14 +84,14 @@ export default function WhyChooseUs() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
           {services.map((service, i) => (
             <motion.div
               key={service.title}
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.05 }}
-              className="bg-white rounded-xl p-6 card-hover shadow-sm border border-gray-100 group text-center"
+              className="bg-white rounded-xl p-4 sm:p-6 card-hover shadow-sm border border-gray-100 group text-center"
             >
               <div className="text-4xl mb-4 leading-none">{service.emoji}</div>
               <h3 className="font-semibold text-gray-900 text-base mb-2">{service.title}</h3>
