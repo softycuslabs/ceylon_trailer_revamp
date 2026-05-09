@@ -71,7 +71,7 @@ export default function DestinationsClient() {
     <>
       <PageHero
         title="Trip Search Result"
-        image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80"
+        image="/images/ceylon-trailer-Sigiriya-1-768x304.png"
         breadcrumbs={[{ label: 'Trip Search Result' }]}
       />
 

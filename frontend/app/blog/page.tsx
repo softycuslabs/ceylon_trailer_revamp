@@ -22,7 +22,7 @@ export default async function BlogPage() {
       <PageHero
         title="Travel Articles"
         subtitle="Stories, guides, and tips from our Sri Lanka experts"
-        image="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1920&q=80"
+        image="/images/ceylon-trailer-Sigiriya-1-768x304.png"
         breadcrumbs={[{ label: 'Travel Articles' }]}
       />
 

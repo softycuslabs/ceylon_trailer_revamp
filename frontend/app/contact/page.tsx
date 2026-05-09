@@ -19,7 +19,7 @@ export default function ContactPage() {
       <PageHero
         title="Contact Us"
         subtitle="We'd love to help plan your dream trip"
-        image="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80"
+        image="/images/ceylon-trailer-Sigiriya-1-768x304.png"
         breadcrumbs={[{ label: 'Contact Us' }]}
       />
 

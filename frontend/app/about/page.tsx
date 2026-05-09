@@ -26,11 +26,12 @@ const values = [
 
 export default function AboutPage() {
   return (
+    
     <>
       <PageHero
         title="About Ceylon Trailer"
         subtitle="Discover the heart of Ceylon with us"
-        image="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=1920&q=80"
+        image="/images/ceylon-trailer-Sigiriya-1-768x304.png"
         breadcrumbs={[{ label: 'About' }]}
       />
 
@@ -69,7 +70,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80"
+                  src="/images/ella-travel-in-srilanka.png"
                   alt="Sri Lanka Landscape"
                   fill
                   className="object-cover"
@@ -102,7 +103,7 @@ export default function AboutPage() {
         </section>
 
         {/* Team */}
-        <section className="py-20">
+        {/* <section className="py-20">
           <div className="container-custom">
             <div className="text-center mb-14">
               <h2 className="section-title">Meet Our Team</h2>
@@ -122,7 +123,7 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CTA */}
         <section className="py-16 bg-gray-50">

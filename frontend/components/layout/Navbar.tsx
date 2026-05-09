@@ -180,9 +180,9 @@ export default function Navbar() {
                 </div>
               ))}
               <div className="pt-3 pb-1">
-                <Link href="/trips" className="btn-primary w-full justify-center text-sm">
+                {/* <Link href="/trips" className="btn-primary w-full justify-center text-sm">
                   Book Now
-                </Link>
+                </Link> */}
               </div>
             </div>
           </motion.div>
