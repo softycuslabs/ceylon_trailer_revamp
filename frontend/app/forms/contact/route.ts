@@ -21,8 +21,11 @@ function checkRateLimit(ip: string): boolean {
 
 function sanitize(value: unknown): string {
   if (typeof value !== 'string') return ''
-  // Strip HTML tags and trim whitespace
-  return value.replace(/<[^>]*>/g, '').trim().slice(0, 2000)
+  return value
+    .replace(/<[^>]*>/g, '')   // strip HTML tags
+    .replace(/[\r\n\t]/g, ' ') // strip control chars — prevents email header injection
+    .trim()
+    .slice(0, 2000)
 }
 
 function isValidEmail(email: string): boolean {
@@ -168,10 +171,18 @@ export async function POST(req: NextRequest) {
   try {
     const apiUrl = process.env.INTERNAL_API_URL || process.env.NEXT_PUBLIC_API_URL
     if (apiUrl) {
+      const tripId = body.trip ? Number(body.trip) : null
+      const destinationId = body.destination ? Number(body.destination) : null
       await fetch(`${apiUrl}/inquiries/`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, phone, country, message, travel_date: travelDate || null, number_of_travelers: travelers }),
+        body: JSON.stringify({
+          name, email, phone, country, message,
+          travel_date: travelDate || null,
+          number_of_travelers: travelers,
+          ...(tripId        && { trip: tripId }),
+          ...(destinationId && { destination: destinationId }),
+        }),
       })
     }
   } catch (err) {
